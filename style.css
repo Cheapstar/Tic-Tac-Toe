@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+      
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30em;
+    height: 30em;
+    border: 2px black solid;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.cell{
+    flex-basis: 10em;
+    height: 10em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: solid 2px black;
+    
+}
+.cellInput{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 30%;
+    
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 0;
+    font-size: 10em;
+    
+}
+
+.cellInput:focus{
+    
+    outline: none;
+}
