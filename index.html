@@ -8,7 +8,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Form for players info -->
+    <dialog id="detailsForm">
+        <form method="dialog" >
+            <div>
+                <p class="playerOneInfo">
+                    <label for="playerOneName" class="labels">Player-1 Name</label>
+                    <input type="text" id="playerOneName" class="playerName">
+                </p>
+                <p class="playerTwoInfo">
+                    <label for="playerTwoName" class="labels">Player-2 Name</label>
+                    <input type="text" id="playerTwoName" class="playerName">
+                </p>
+
+                <p class="turnChoice">
+                    <label for="firstTurn" class="labels choiceLabel">Who will Play First ?</label>
+        
+                        <label for="turnChoiceX" class="labels">X : </label>
+                        <input type="radio" name="Choice" id="turnChoiceX" value="x" class="choiceInput">
+
+                        <label for="turnChoiceO" class="labels">O : </label>
+                        <input type="radio" name="Choice" id="turnChoiceO" value="o" class="choiceInput">
+                    
+                          
+                    
+
+                </p>
+
+            </div>
+            
+            <p class="playButton">
+                <button type="submit">
+                    PLAY
+                </button>
+            </p>
+            
+        </form>
+
+    </dialog>
+
+    <div class="interface">
+        <div class="startButtonContainer">
+            <button type="button" class="startButton">
+            Start a Game
+            </button>
+        </div>
+        <div class="playerInfo">
+            <div class="playerInfoSub">
+                <p class="playerOne players">Player 1</p>
+                <p class="playerTwo players">Player 2</p>
+            </div>
+        </div>
+        <div class="markers">
+            <div class="markerSub">
+                <p class="cross">X</p>
+                <p class="zero">O</p>
+            </div>
+        </div>
+        
+
+
+    </div>
     <div class="container">
         <div class="cell">
             <input type="text" maxlength="1" class="cellInput" data-index="0"  >
@@ -39,6 +100,15 @@
         </div>
     </div>
 
+
+    <dialog id="winnerAnnouncement">
+        <p></p>
+        <p class="replayButton">
+            <button type="button">
+                New Game
+            </button>
+        </p>
+    </dialog>
     <script src="index.js"></script>
 </body>
 </html>
